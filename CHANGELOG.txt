@@ -1,0 +1,9 @@
+CHANGELOG
+=========
+v1.0.00
+-------
+Adds database views to allow sync with Moodle
+
+
+	
+
