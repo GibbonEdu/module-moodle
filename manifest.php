@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Gibbon, Flexible & Open School System
 Copyright (C) 2010, Ross Parker
@@ -25,7 +25,7 @@ $description="A module to support support Moodle Integration. This module has no
 $entryURL="" ;
 $type="Additional" ;
 $category="" ;
-$version="1.0.00" ;
+$version="1.0.01" ;
 $author="Ross Parker" ;
 $url="http://rossparker.org" ;
 
