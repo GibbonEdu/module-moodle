@@ -20,20 +20,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //This file describes the module, including database tables
 
 //Basic variables
-$name="Moodle" ;
-$description="A module to support support Moodle Integration. This module has no actions and is not seen by users, it just alters the database." ;
-$entryURL="" ;
-$type="Additional" ;
-$category="" ;
-$version="1.0.02" ;
-$author="Ross Parker" ;
-$url="http://rossparker.org" ;
+$name = 'Moodle';
+$description = 'A module to support support Moodle Integration. This module has no actions and is not seen by users, it just alters the database.';
+$entryURL = '';
+$type = 'Additional';
+$category = '';
+$version = '1.0.03';
+$author = 'Ross Parker';
+$url = 'http://rossparker.org';
 
 //Module tables
-$moduleTables[0]="CREATE VIEW moodleUser AS SELECT username, preferredName, surname, email, website FROM gibbonPerson JOIN gibbonRole ON (gibbonRole.gibbonRoleID=gibbonPerson.gibbonRoleIDPrimary) WHERE (category='Student' OR category='Staff') AND status='Full';" ;
-$moduleTables[1]="CREATE VIEW moodleCourse AS SELECT * FROM `gibbonCourse` WHERE gibbonSchoolYearID=(SELECT gibbonSchoolYearID FROM gibbonSchoolYear Where status='Current');" ;
-$moduleTables[2]="CREATE VIEW moodleEnrolment AS SELECT DISTINCT gibbonCourse.gibbonCourseID, gibbonCourse.name, username, role FROM gibbonCourse JOIN gibbonCourseClass ON (gibbonCourseClass.gibbonCourseID=gibbonCourse.gibbonCourseID) JOIN gibbonCourseClassPerson ON (gibbonCourseClassPerson.gibbonCourseClassID=gibbonCourseClass.gibbonCourseClassID) JOIN gibbonPerson ON (gibbonCourseClassPerson.gibbonPersonID=gibbonPerson.gibbonPersonID) WHERE status='Full' AND  gibbonSchoolYearID=(SELECT gibbonSchoolYearID FROM gibbonSchoolYear Where status='Current');" ;
+$moduleTables[0] = "CREATE VIEW moodleUser AS SELECT username, preferredName, surname, email, website FROM gibbonPerson JOIN gibbonRole ON (gibbonRole.gibbonRoleID=gibbonPerson.gibbonRoleIDPrimary) WHERE (category='Student' OR category='Staff') AND status='Full';";
+$moduleTables[1] = "CREATE VIEW moodleCourse AS SELECT * FROM `gibbonCourse` WHERE gibbonSchoolYearID=(SELECT gibbonSchoolYearID FROM gibbonSchoolYear Where status='Current');";
+$moduleTables[2] = "CREATE VIEW moodleEnrolment AS SELECT DISTINCT gibbonCourse.gibbonCourseID, gibbonCourse.name, username, role FROM gibbonCourse JOIN gibbonCourseClass ON (gibbonCourseClass.gibbonCourseID=gibbonCourse.gibbonCourseID) JOIN gibbonCourseClassPerson ON (gibbonCourseClassPerson.gibbonCourseClassID=gibbonCourseClass.gibbonCourseClassID) JOIN gibbonPerson ON (gibbonCourseClassPerson.gibbonPersonID=gibbonPerson.gibbonPersonID) WHERE status='Full' AND  gibbonSchoolYearID=(SELECT gibbonSchoolYearID FROM gibbonSchoolYear Where status='Current');";
 
 //Action rows (none)
-
-?>
+;

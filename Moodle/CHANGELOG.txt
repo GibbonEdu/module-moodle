@@ -1,5 +1,9 @@
 CHANGELOG
 =========
+v1.0.03
+-------
+Beautified PHP code
+
 v1.0.02
 -------
 Sub folder tweak
@@ -11,7 +15,3 @@ Fixed PHP short tag issues
 v1.0.00
 -------
 Adds database views to allow sync with Moodle
-
-
-	
-
