@@ -1,7 +1,9 @@
 <?php
 /*
-Gibbon, Flexible & Open School System
-Copyright (C) 2010, Ross Parker
+Gibbon: the flexible, open school platform
+Founded by Ross Parker at ICHK Secondary. Built by Ross Parker, Sandra Kuipers and the Gibbon community (https://gibbonedu.org/about/)
+Copyright © 2010, Gibbon Foundation
+Gibbon™, Gibbon Education Ltd. (Hong Kong)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -25,9 +27,9 @@ $description = 'A module to support support Moodle Integration. This module has 
 $entryURL = '';
 $type = 'Additional';
 $category = '';
-$version = '1.0.04';
-$author = 'Ross Parker';
-$url = 'http://rossparker.org';
+$version = '1.1.00';
+$author = "Gibbon Foundation";
+$url = "https://gibbonedu.org";
 
 //Module tables
 $moduleTables[0] = "CREATE VIEW moodleUser AS SELECT username, preferredName, surname, email, website FROM gibbonPerson JOIN gibbonRole ON (gibbonRole.gibbonRoleID=gibbonPerson.gibbonRoleIDPrimary) WHERE (category='Student' OR category='Staff') AND status='Full';";

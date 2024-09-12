@@ -1,5 +1,9 @@
 CHANGELOG
 =========
+v1.1.00
+-------
+Transferred ownership from Ross Parker to Gibbon Foundation
+
 v1.0.04
 -------
 Fixed indentation in beautified PHP code
