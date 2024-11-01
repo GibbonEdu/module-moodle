@@ -27,7 +27,7 @@ $description = 'A module to support support Moodle Integration. This module has 
 $entryURL = '';
 $type = 'Additional';
 $category = '';
-$version = '1.1.01';
+$version = '1.1.02';
 $author = "Gibbon Foundation";
 $url = "https://gibbonedu.org";
 
